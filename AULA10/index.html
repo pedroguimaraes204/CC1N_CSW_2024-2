@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAggssqRISwKNKaryD1G2c65o6YFvukgBtDQ&s"
+        type="image/x-icon">
+    <title>títulos</title>
+</head>
+
+<body>
+
+    <h1>4. FERRAMENTAS TI UTILIZADAS NA BIBLIOTECA ANA BOVE</h1>
+    <h2>4.1 Sobre a Biblioteca Ana Bove e sua instiuição mantenedora</h2>
+    <h3>4.1.1 O Imip</h3>
+    <h3>4.1.2 A biblioteca Ana Bove</h3>
+    <h2>4.2 Diagnóstico tecnológico da Biblioteca Ana Bove</h2>
+    <h3>4.2.1 Catálogo automático</h3>
+    <h3>4.2.2 Repositório institucional</h3>
+    <h3>4.2.3 Portal e/ou base de dados de informação científica</h3>
+    <h4>4.2.4 Website (site)</h4>
+    <h5>4.2.5 Redes sociais</h5>
+    <h6>4.2.6 Outras ferramentas</h6>
+    <br>
+    <hr>
+    <p> clube de regatas vasco da gama </p>
+    <p> <b>clube de regatas vasco da gama</b> </p>
+    <p> <u>clube de regatas vasco da gama</u> </p>
+
+    <p> o professor Fabrício é um cara legal, ele nasceu <u>R. José Romério Duque, 185 - Mantena, MG, 35290-000</u> no
+        hospital evangélico, e ainda criança veio morar na <u> rua Santa Luzia, 323 - Serra, ES</u></p>
+    <br>
+    <p> o professor Fabrício é um cara legal, ele nasceu
+    <address> R. José Romério Duque, 185 - Mantena, MG, 35290-000 </address> no hospital evangélico, e ainda criança
+    veio morar na <address> rua Santa Luzia, 323 - Serra, ES </address>
+    </p>
+    <p> 2 <sub>3</sub></p>
+    <p> 2 <sup>3</sup></p>
+    <hr>
+
+    <pre>
+        <code> // codigo do chatgpt
+        import tkinter as tk
+        from tkinter import ttk
+
+        # Função para converter Celsius para Fahrenheit
+        def celsius_para_fahrenheit(celsius):
+        return (celsius * 9/5) + 32
+
+        # Função para atualizar o rótulo com a temperatura convertida
+        def converter():
+        try:
+        celsius = float(celsius_entry.get())
+        fahrenheit = celsius_para_fahrenheit(celsius)
+        resultado_label.config(text=f"Temperatura em Fahrenheit: {fahrenheit:.2f}")
+        except ValueError:
+        resultado_label.config(text="Por favor, insira um número válido.")
+
+        # Configuração da janela principal
+        root = tk.Tk()
+        root.title("Conversor Celsius para Fahrenheit")
+
+        # Criar e posicionar os widgets
+        celsius_label = ttk.Label(root, text="Temperatura em Celsius:")
+        celsius_label.pack(padx=10, pady=5)
+
+        celsius_entry = ttk.Entry(root)
+        celsius_entry.pack(padx=10, pady=5)
+
+        converter_button = ttk.Button(root, text="Converter", command=converter)
+        converter_button.pack(padx=10, pady=10)
+
+        resultado_label = ttk.Label(root, text="Temperatura em Fahrenheit:")
+        resultado_label.pack(padx=10, pady=5)
+
+        # Iniciar o loop da interface gráfica
+        root.mainloop()
+
+        </code>
+    </pre>
+
+    <hr>
+
+</body>
+
+</html>
